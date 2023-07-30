@@ -1,0 +1,60 @@
+{% extends 'com.html' %}
+
+{% block body %}
+<div>
+  <div id='myCarousel' class='carousel slide' data-bs-ride='carousel'>
+    <!-- Indicators -->
+    <ol class='carousel-indicators'>
+      <li data-bs-target='#myCarousel' data-bs-slide-to='0' class='active'></li>
+      <li data-bs-target='#myCarousel' data-bs-slide-to='1'></li>
+      <li data-bs-target='#myCarousel' data-bs-slide-to='2'></li>
+    </ol>
+
+    <!-- Slides -->
+    <div class='carousel-inner'>
+      <div class='carousel-item active'>
+        <img src='https://picsum.photos/800/400?random=1' alt='Image 1'>
+        <div class='carousel-caption'>
+          <h3>Image 1</h3>
+          <p>This is the first image in the slider.</p>
+        </div>
+      </div>
+      <div class='carousel-item'>
+        <img src='https://picsum.photos/800/400?random=2' alt='Image 2'>
+        <div class='carousel-caption'>
+          <h3>Image 2</h3>
+          <p>This is the second image in the slider.</p>
+        </div>
+      </div>
+      <div class='carousel-item'>
+        <img src='https://picsum.photos/800/400?random=3' alt='Image 3'>
+        <div class='carousel-caption'>
+          <h3>Image 3</h3>
+          <p>This is the third image in the slider.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class='carousel-control-prev' href='#myCarousel' role='button' data-bs-slide='prev'>
+      <span class='carousel-control-prev-icon' aria-hidden='true'></span>
+      <span class='visually-hidden'>Previous</span>
+    </a>
+    <a class='carousel-control-next' href='#myCarousel' role='button' data-bs-slide='next'>
+      <span class='carousel-control-next-icon' aria-hidden='true'></span>
+      <span class='visually-hidden'>Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Main Content -->
+<main class="container mt-4">
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to Your Website!</h1>
+      <p class="lead">This is a basic template for a home page.</p>
+      <hr class="my-4">
+      <p>You can logout from here.</p>
+      <a class="btn btn-dark btn-lg" href="/log" role="button">Logout</a>
+    </div>
+  </main>
+{% endblock body %}
